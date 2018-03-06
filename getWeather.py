@@ -5,4 +5,4 @@ url = Request('https://www.wunderground.com/history/airport/UUEE/2018/2/1/DailyH
 webpage = urlopen(url).read()
 soup = BeautifulSoup(webpage)
 values = soup.findAll(attrs={"class":"wx-value"})
-print(values[4])
+print(values[1])
